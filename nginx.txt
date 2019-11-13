@@ -26,7 +26,7 @@ Configuring Basic Rate Limiting
     - Handle Bursts 
         1. if request exceed NGINX returns status code 503 to the client.
         or 
-        2. Set queue size burst=20  (withou nodelay): //not reccomended
+        2. Set queue size burst=20  (without nodely): //not reccomended
             if 22 request from same address at the same time, only 1 send to upstream server 
             the rest 20 request put in queue (and send to server 1 request 
                 in every 0.1 second at a time or take 2 secons for 20 queue)
