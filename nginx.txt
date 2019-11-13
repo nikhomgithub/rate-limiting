@@ -193,7 +193,7 @@ location /login/ {
 Error Code Sent to Client
 By default NGINX responds with status code 503 (Service Temporarily Unavailable) 
 when a client exceeds its rate limit. Use the limit_req_status directive 
-o set a different status code (444 in this example):
+to set a different status code (444 in this example):
 
 location /login/ {
     limit_req zone=mylimit burst=20 nodelay;
